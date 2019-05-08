@@ -38,5 +38,5 @@ You can experiment with other fractals by editing `Set.cpp`: within `Set::iterat
 - `neg()` on a complex number `(a+bi)` returns `(-a-bi)`
 - `inv()` on a complex number `(a+bi)` returns `(b+ai)`
 - `abso()` on a complex number `(a+bi)` returns `(|a|+|b|i)`
-- standard operators `+`, `-`, `*` and `^` will perform as expected with computer numbers as operands
+- standard operators `+`, `-`, `*` and `^` will perform as expected
 - `^` only works as integer as second operand
