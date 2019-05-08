@@ -1,4 +1,4 @@
-# fractal_generator
+# fractal-generator
 
 ## Dependencies:
 - Freeglut
