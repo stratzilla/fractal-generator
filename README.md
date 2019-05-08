@@ -1,6 +1,6 @@
 # fractal-generator
 
-## Dependencies:
+## Dependencies
 - Freeglut
 - Freeimage
 - C++03 or later
