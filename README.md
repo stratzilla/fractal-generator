@@ -41,3 +41,5 @@ You can experiment with other fractals by editing `Set.cpp`: within `Set::iterat
 - `abso()` on a complex number `(a+bi)` returns `(|a|+|b|i)`
 - standard operators `+`, `-`, `*` and `^` will perform as expected
 - `^` only works as integer as second operand
+
+For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^3+z_n^2+c" />, you would hardcode in `(z^3).neg() + z^2 + c`, etc.
