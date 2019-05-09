@@ -9,7 +9,7 @@ Here, fractals are defined by set theory and limits. The equation used is below:
 
 Where <img src="https://latex.codecogs.com/gif.latex?d" /> is the maximum number of iterations performed on <img src="https://latex.codecogs.com/gif.latex?z_n" />. Each iteration is defined by an arithmetic expression describing the relationship between <img src="https://latex.codecogs.com/gif.latex?z_n" /> and <img src="https://latex.codecogs.com/gif.latex?z_{n+1}" />, which is defined in terms of complex number arithmetic. 
 
-A very large <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with higher precision but may be difficult to see as points become "infinitely" thin; contrastingly, a very small <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with very little granularity and is overall an inaccurate render. Suggested use case scenario is <img src="https://latex.codecogs.com/gif.latex?d\in[64, 512]" /> as it's a good balance between clarity, visual pleasure, and of course execution time.
+A very large <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with higher precision but may be difficult to see as points become "infinitely" thin; contrastingly, a very small <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with very little granularity and is overall an inaccurate render. Suggested use case scenario is <img src="https://latex.codecogs.com/gif.latex?d\in[64,512]" /> as it's a good balance between clarity, visual pleasure, and of course execution time.
 
 ## Supported Fractals
 Included are ten fractals, the first three have canonical names and the other seven are found through experimentation. The canonically named fractals alongside their iterative arithmetic is below:
@@ -42,10 +42,11 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
 - X11 or other window manager
 
 ## Execution
-    $ g++ Source.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
+    $ cd src
+    $ g++ main.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
     $ /a.out <arg>
   
-`<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set.
+`<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before.
 
 CLI will appear on execution detailing controls. `1` through `0` will cycle between fractals, `r` to reset, `s` to save screen capture to parent directory. Use mouse buttons to zoom in and out.
 
