@@ -41,7 +41,11 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
 - X11 or other window manager
 
 ## Execution
-    $ g++ Source.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
+Using included script:
+    $ ./fractal-generator.sh <arg>
+    
+Or alternatively, manually compile and run:
+    $ g++ src/main.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
     $ /a.out <arg>
   
 `<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before.
