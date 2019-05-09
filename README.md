@@ -41,10 +41,9 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
 - X11 or other window manager
 
 ## Execution
-Using included script:
+    # Using included script:
     $ ./fractal-generator.sh <arg>
-    
-Or alternatively, manually compile and run:
+    # Or alternatively, manually compile and run:
     $ g++ src/main.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
     $ /a.out <arg>
   
