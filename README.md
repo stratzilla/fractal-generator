@@ -8,7 +8,11 @@ Here, fractals are defined by set theory and limits. The equation used is below:
 
 Where <img src="https://latex.codecogs.com/gif.latex?d" /> is the maximum number of iterations performed on <img src="https://latex.codecogs.com/gif.latex?z_n" />. Each iteration is defined by an arithmetic expression describing the relationship between <img src="https://latex.codecogs.com/gif.latex?z_n" /> and <img src="https://latex.codecogs.com/gif.latex?z_{n+1}" />, which is defined in terms of complex number arithmetic. 
 
-A very large <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with higher precision but may be difficult to see as points become "infinitely" thin; contrastingly, a very small <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with very little granularity and is overall an inaccurate render. Suggested use case scenario is <img src="https://latex.codecogs.com/gif.latex?d\in[64,512]" /> as it's a good balance between clarity, visual pleasure, and of course execution time.
+The superior limit of this iteration will consider points in <img src="https://latex.codecogs.com/gif.latex?F" /> if <img src="https://latex.codecogs.com/gif.latex?z_d \leq 5" />, or it remains bounded within the set after the <img src="https://latex.codecogs.com/gif.latex?d" />th iteration. Points which pass this test are within the set, with all others some distance from the set (used for coloring).
+
+Consider <img src="https://latex.codecogs.com/gif.latex?d = 0" />: all points in the plane are within the set. With <img src="https://latex.codecogs.com/gif.latex?d = 1" />, less are within the set, and so on until the shape of the set is realized. A very large <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with higher precision but may be difficult to see as points become "infinitely" thin; contrastingly, a very small <img src="https://latex.codecogs.com/gif.latex?d" /> will render the fractal set with very little granularity and is overall an inaccurate render. 
+
+Suggested use case scenario is <img src="https://latex.codecogs.com/gif.latex?d\in[64,512]" /> as it's a good balance between clarity, visual pleasure, and of course execution time.
 
 ## Supported Fractals
 Included are ten fractals, the first three have canonical names and the other seven are found through experimentation. The canonically named fractals alongside their iterative arithmetic is below:
