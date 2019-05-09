@@ -1,20 +1,5 @@
 # fractal-generator
 
-## Dependencies
-- Freeglut
-- Freeimage
-- C++03 or later
-- gcc
-- X11 or other window manager
-
-## Execution
-    $ g++ Source.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
-    $ /a.out <arg>
-  
-`<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set.
-
-CLI will appear on execution detailing controls. `1` through `0` will cycle between fractals, `r` to reset, `s` to save screen capture to parent directory. Use mouse buttons to zoom in and out.
-
 ## Fractals
 Fractals are defined by set theory and limits. The equation used is below:
 
@@ -39,7 +24,22 @@ You can experiment with other fractals by editing `Set.cpp`: within `Set::iterat
 - `neg()` on a complex number `(a+bi)` returns `(-a-bi)`
 - `inv()` on a complex number `(a+bi)` returns `(b+ai)`
 - `abso()` on a complex number `(a+bi)` returns `(|a|+|b|i)`
-- standard operators `+`, `-`, `*` and `^` will perform as expected
-- `^` only works as integer as second operand
+- standard operators `+`, `-`, `*` and `^` will function as expected
+- `^` only works with integer as second operand
 
 For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^3+z_n^2+c" />, you would hardcode in `(z^3).neg() + z^2 + c`, etc.
+
+## Dependencies
+- Freeglut
+- Freeimage
+- C++03 or later
+- gcc
+- X11 or other window manager
+
+## Execution
+    $ g++ Source.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
+    $ /a.out <arg>
+  
+`<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set.
+
+CLI will appear on execution detailing controls. `1` through `0` will cycle between fractals, `r` to reset, `s` to save screen capture to parent directory. Use mouse buttons to zoom in and out.
