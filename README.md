@@ -26,9 +26,9 @@ Included are ten fractals, the first three have canonical names and the other se
 
 You can experiment with other fractals by editing `Set.cpp`: within `Set::iterate()` you can define the arithmetic expression which determines the set. Using a subset of complex number arithmetic, you can define new fractals. Available arithmetic operations are:
 
-- `neg()` on a complex number `(a+bi)` returns `(-a-bi)`
-- `inv()` on a complex number `(a+bi)` returns `(b+ai)`
-- `abso()` on a complex number `(a+bi)` returns `(|a|+|b|i)`
+- `neg()` on a complex number <img src="https://latex.codecogs.com/gif.latex?(a+bi)" /> returns <img src="https://latex.codecogs.com/gif.latex?(-a-bi)" />
+- `inv()` on a complex number <img src="https://latex.codecogs.com/gif.latex?(a+bi)" /> returns <img src="https://latex.codecogs.com/gif.latex?(b+ai)" />
+- `abso()` on a complex number <img src="https://latex.codecogs.com/gif.latex?(a+bi)" /> returns <img src="https://latex.codecogs.com/gif.latex?(|a|+|b|i)" />
 - standard operators `+`, `-`, `*` and `^` will function as expected
 - `^` only works with integer as second operand
 
@@ -42,8 +42,7 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
 - X11 or other window manager
 
 ## Execution
-    $ cd src
-    $ g++ main.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
+    $ g++ Source.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
     $ /a.out <arg>
   
 `<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before.
