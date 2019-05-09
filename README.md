@@ -1,5 +1,4 @@
 # fractal-generator
-
 This is a simple OpenGL fractal generator/visualizer. Some fractals are defined which are then displayed using OpenGL with zooming capability.
 
 ## Fractals
@@ -19,7 +18,7 @@ Included are ten fractals, the first three have canonical names and the other se
 
 <b>Julia Set</b>
 - <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=z_n^2+k" /> 
-- <img src="https://latex.codecogs.com/gif.latex?k" /> is some constant, here defined as <img src="https://latex.codecogs.com/gif.latex?(-0.835-0.232i)" />`
+- <img src="https://latex.codecogs.com/gif.latex?k" /> is some constant, here defined as <img src="https://latex.codecogs.com/gif.latex?(-0.835-0.232i)" />
 
 <b>Burning Ship Set</b>
 - <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=|z_n|^2+c" /> 
@@ -48,3 +47,6 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
 `<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before.
 
 CLI will appear on execution detailing controls. `1` through `0` will cycle between fractals, `r` to reset, `s` to save screen capture to parent directory. Use mouse buttons to zoom in and out.
+
+## Future
+It is painfully trivial to add more fractals to the system, but this requires hardcoding. A truly generalized fractal visualizer should parse user input (eg. a string) into an arithmetic expression which defines the iteration for the fractal set. Perhaps in the future I can implement this.
