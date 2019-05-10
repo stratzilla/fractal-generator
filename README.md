@@ -58,7 +58,7 @@ CLI will appear on execution detailing controls. `1` through `0` will cycle betw
 ## Example Outputs
 <img src="https://github.com/stratzilla/fractal-generator/blob/master/img/ShurikenZoom.png" width="20%"/> <img src="https://github.com/stratzilla/fractal-generator/blob/master/img/MandelbrotDefault.png" width="20%"/> <img src="https://github.com/stratzilla/fractal-generator/blob/master/img/VeinDefault.png" width="20%"/> <img src="https://github.com/stratzilla/fractal-generator/blob/master/img/JuliaZoom.png" width="20%"/>
 
-L-to-R: `(z^2 - z^3) + (-0.372 + 0.519i)`, `z^2 + c`, `z.inv().neg()^2 + z`, `z^2 + (-0.835 - 0.232i)`. More examples in `img/`. These images found using <img src="https://latex.codecogs.com/gif.latex?d=64" />.
+L-to-R: `(z^2 - z^3) + (-0.372 + 0.519i)`, `z^2 + c`, `z.inv().neg()^2 + z`, `z^2 + (-0.835 - 0.232i)`. More examples in `img/`. These images found using depth of 64.
 
 ## Future
 It is painfully trivial to add more fractals to the system, but this requires hardcoding. A truly generalized fractal visualizer should parse user input (eg. a string) into an arithmetic expression which defines the iteration for the fractal set. Perhaps in the future I can implement this. Lambda expressions are a possibility but I constrained myself to C++03.
