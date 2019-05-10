@@ -51,7 +51,7 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
     $ g++ src/main.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x
     $ /a.out <arg>
   
-`<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before. Default is <img src="https://latex.codecogs.com/gif.latex?d=128" />.
+`<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before.
 
 CLI will appear on execution detailing controls. `1` through `0` will cycle between fractals, `r` to reset, `s` to save screen capture to parent directory. Use mouse buttons to zoom in and out.
 
