@@ -5,10 +5,7 @@
 #include <sstream>
 #include <array>
 
-#include "Set.cpp"
-#include "Fractal.cpp"
-#include "Pixel.cpp"
-#include "ComplexNumber.cpp"
+#include "Set.h"
 
 #define WIDTH 800 // window width
 #define HEIGHT 800 // window height
