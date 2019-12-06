@@ -40,7 +40,7 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
 ## Dependencies
 - Freeglut
 - Freeimage
-- C++03 or later
+- C++0x or later
 - gcc
 - X11 or other window manager
 
@@ -49,7 +49,7 @@ For example, to get <img src="https://latex.codecogs.com/gif.latex?z_{n+1}=-z_n^
     $ ./fractal-generator.sh <arg>
     # Or alternatively, manually compile and run:
     $ g++ src/*.cpp -O2 -lGL -lGLU -lglut -lfreeimage -lX11 -std=c++0x -o fg
-    $ /fg <arg>
+    $ ./fg <arg>
   
 `<arg>` is the maximum depth (number of iterations) used to define fractal within the range `[32, 4096]`. Higher is slower but shows higher fidelity of the fractal set. This is the <img src="https://latex.codecogs.com/gif.latex?d" /> from before.
 
